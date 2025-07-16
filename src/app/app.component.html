@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Hamburger icon for mobile -->
+        <li class="burger" (click)="toggleSidenav()">
+            <i class="material-icons">{{ isSidenavOpen ? 'close' : 'menu' }}</i>
+        </li>
+
+        <!-- Navbar for larger screens -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="/items">Products</a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="/customers">Customers</a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="/orders">Orders</a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="/login">Login</a>
+                    </li>
+                </ul>
+                <ul class="logout">
+                    <li>
+                        <a href="#" (click)="onLogout()">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Side menu for mobile -->
+        <li class="menu" [class.is-open]="isSidenavOpen">
+            <a class="menu-item" href="/home">Home</a>
+            <a class="menu-item" href="/items">Products</a>
+            <a class="menu-item" href="/customers">Customers</a>
+            <a class="menu-item" href="/orders">Orders</a>
+            <a class="menu-item" href="/login">Login</a>
+            <a class="menu-item" href="#" (click)="onLogout()">Logout</a>
+        </li>
+    </div>
+
+    <div class="area">
+        <router-outlet></router-outlet>
+    </div>
+
+    <script>
+        function toggleSidenav() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('is-open');
+        }
+    </script>
+
+</body>
+
+</html>

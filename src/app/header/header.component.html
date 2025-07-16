@@ -1,0 +1,24 @@
+<header>
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand">
+      
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          (input)="filterItems()"
+          placeholder="Search by item name"
+        />
+      </div>
+      <div class="container">
+        <div class="col-md-12 text-right">
+          
+        </div>
+      </div>
+      <button routerLink="/cart" class="btn btn-primary">
+        <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of filteredProductList">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card">
+        <img (click)="viewDetails(item.ItemNo)" [src]="'data:image/jpeg;base64,' + item.ItemImage" alt="{{item.ItemName}}" class="img-fluid">
+        <h5>{{item.ItemName}}</h5>
+        
+      </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

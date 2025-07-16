@@ -1,0 +1,48 @@
+/* Set the background color for the header */
+header {
+  background-color: #007bff; /* Blue background color */
+  padding: 10px 20px; /* Add some padding for better spacing */
+}
+
+/* Container for header items */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to the left and right */
+  width: 100%; /* Ensure the navbar-brand takes up the full width of the header */
+}
+
+/* Style for the logo and text */
+.navbar-brand i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Form group to align search input */
+.form-group {
+  flex-grow: 1; /* Allows form-group to take up remaining space */
+  margin-right: 20px; /* Space between form group and cart button */
+}
+
+/* Style for the input field */
+input[type="text"] {
+  
+  width: 200px; /* Full width of the form group */
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Style for the cart button */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content inside the button */
+  margin-left: auto; /* Push the cart button to the far right */
+}
+
+/* Optional: Style the badge */
+.badge {
+  font-size: 12px;
+}

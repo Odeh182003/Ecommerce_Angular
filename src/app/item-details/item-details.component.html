@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img *ngIf="item.ItemImage" [src]="getImageUrl(item.ItemImage)" alt="Item Image" >
+
+    </div>
+    <div class="col-md-6">
+      <h2>{{item.ItemName}}</h2>
+      <h2>Description</h2>
+      <p>{{item.description}}</p>
+      <p><strong>Price:</strong> NIS {{item.Price}}</p>
+      <div class="aquantity">
+        <button (click)="quantity('min')" class="btn btn-dark"><strong>-</strong></button>
+        <input class="inputbox" text="text" [(ngModel)]="productQuantity">
+        <button (click)="quantity('max')" class="btn btn-dark"><strong>+</strong></button>
+      </div>
+      <button class="btn btn-primary" (click)="addToCart()">Add to cart</button>
+      <button routerLink="/items" class="btn btn-primary">Shop More</button>
+
+    </div>
+  </div>
+</div>

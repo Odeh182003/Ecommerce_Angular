@@ -1,0 +1,34 @@
+<div class="header-container">
+  <h1>Customers</h1>
+  <button class="add-customer-btn" (click)="openDialog()">Add New Customer</button>
+</div>
+
+<!-- Search Input -->
+<input
+  type="text"
+  [(ngModel)]="searchTerm"
+  (input)="filterCustomers()"
+  placeholder="Search by customer name"
+/>
+<div class="container">
+  
+  <div class="main-card">
+    <div class="cards">
+      <div class="card" *ngFor="let customer of filteredCustomers">
+        <div class="content">
+          <div class="img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" (click)="handleCustomerSelected(customer.CustomerID)"
+            />
+          </div>
+          <div class="details">
+            <h2 class="name">{{ customer.CustomerName }}</h2>
+            <button (click)="openDialog(customer)">Edit</button>
+            <button (click)="removeItem(customer)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

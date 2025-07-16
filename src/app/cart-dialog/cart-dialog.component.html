@@ -1,0 +1,21 @@
+<section class="main-wrap">
+    <div class="product">
+      <div class="image-gallery">
+        <img [src]="'data:image/jpeg;base64,' + ItemImage" alt="{{itemName}}" class="img-fluid">
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="details">
+        <h2>{{itemName}}</h2>
+        <h3>NIS {{Price}}</h3> <!-- Updated to match database field name -->
+        <p>{{description}}</p>
+      </div>
+      <div class="aquantity">
+        <button (click)="quantity('min')" class="btn btn-dark"><strong>-</strong></button>
+        <input class="inputbox" type="text" disabled value="{{productQuantity}}">
+        <button (click)="quantity('max')" class="btn btn-dark"><strong>+</strong></button>
+      </div>
+      <button class="btn btn-primary" (click)="addToCart()">Add to cart</button>
+    </div>
+  </section>
+  

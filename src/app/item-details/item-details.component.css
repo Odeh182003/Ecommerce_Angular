@@ -1,0 +1,102 @@
+/* General Styling */
+
+
+.container {
+    max-width: 1200px; /* Center the content with a max-width */
+    margin: 20px auto; /* Add some vertical margin */
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    background-color: #f4f4f4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between image and content */
+}
+
+.col-md-6:first-child {
+    flex: 0 0 40%; /* Image column takes 40% of the width */
+}
+
+.col-md-6:last-child {
+    flex: 0 0 55%; /* Text column takes 55% of the width */
+    padding-left: 20px; /* Space between image and content */
+}
+
+/* Image Styling */
+img {
+    border-radius: 8px; /* Rounded corners on the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Text Content Styling */
+h2 {
+    color: #333; /* Dark grey text for headings */
+    margin-bottom: 15px; /* Spacing below headings */
+}
+
+p {
+    color: #555; /* Medium grey text for paragraphs */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 10px; /* Spacing below paragraphs */
+}
+
+strong {
+    color: #000; /* Bold text for emphasis */
+}
+
+/* Quantity Buttons and Input Styling */
+.aquantity {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.aquantity .btn {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.inputbox {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.btn-dark:hover {
+    background-color: #1d2124;
+}

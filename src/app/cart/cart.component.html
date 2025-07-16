@@ -1,0 +1,58 @@
+<ng-container *ngIf="products.length != 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="card-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Item Image</th>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of products">
+              <td>
+                <img *ngIf="item.ItemImage" [src]="getImageUrl(item.ItemImage)" alt="Item Image" style="width: 100px; height: auto;">
+              </td>
+              <td>{{ item.itemName }}</td>
+              <td>{{ item.quantity }}</td>
+              <td>{{ item.price | currency }}</td>
+              <td>{{ item.price * item.quantity | currency }}</td>
+              <td>
+                <button (click)="removeItems(item)" class="btn btn-danger">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"><strong>Grand Total: {{ grandTotal | currency }}</strong></td>
+              <td colspan="2">
+                <button (click)="emptyCart()" class="btn btn-danger">Empty Cart</button>
+                <button routerLink="/items" class="btn btn-primary">Shop More</button>
+                <button (click)="checkout()" class="btn btn-success">Checkout</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+  <div class="container">
+    <div class="card">
+      <h5 class="card-title">My cart</h5>
+    </div>
+    <div class="center">
+      <img src="https://res.cloudinary.com/dhzk3doo9/images/c_scale,w_648,h_502,dpr_2/f_webp,q_auto/v1681230038/hpimage/hpimage.png?_i=AA" alt="">
+      <h4>Your cart is empty!!</h4>
+      <h6>Add items to it now</h6>
+      <button routerLink="/items" class="btn btn-primary">Shop Now</button>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>{{ data.CustomerID ? 'Update Customer' : 'Add Customer' }}</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="customerForm">
+    <!-- Customer Name Field -->
+    <mat-form-field appearance="fill">
+      <mat-label>Customer Name</mat-label>
+      <input matInput formControlName="CustomerName" placeholder="Enter Customer Name">
+      <mat-error *ngIf="customerForm.controls['CustomerName'].invalid">
+        Customer Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Customer Mobile Field -->
+    <mat-form-field appearance="fill">
+      <mat-label>Customer Mobile</mat-label>
+      <input matInput formControlName="CustomerMobile" placeholder="Enter Customer Mobile">
+      <mat-error *ngIf="customerForm.controls['CustomerMobile'].invalid">
+        Customer Mobile is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Customer Address Field -->
+    <mat-form-field appearance="fill">
+      <mat-label>Customer Address</mat-label>
+      <input matInput formControlName="CustomerAddress" placeholder="Enter Customer Address">
+      <mat-error *ngIf="customerForm.controls['CustomerAddress'].invalid">
+        Customer Address is required
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [disabled]="!customerForm.valid" (click)="onSave()">Save</button>
+</div>
