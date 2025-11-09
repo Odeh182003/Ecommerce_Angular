@@ -1,27 +1,102 @@
-# SecondLastTry
+<div id="top">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# ECOMMERCE_ANGULAR
 
-## Code scaffolding
+<em>Transform Shopping Into Seamless Customer Experiences</em>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- BADGES -->
+<img src="https://img.shields.io/github/last-commit/Odeh182003/Ecommerce_Angular?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/Odeh182003/Ecommerce_Angular?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/Odeh182003/Ecommerce_Angular?style=flat&color=0080ff" alt="repo-language-count">
 
-## Build
+<em>Built with the tools and technologies:</em>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white" alt="npm">
+<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
 
-## Running unit tests
+</div>
+<br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Table of Contents
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Overview
+
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+This project requires the following dependencies:
+
+- **Programming Language:** TypeScript
+- **Package Manager:** Npm
+
+### Installation
+
+Build Ecommerce_Angular from the source and install dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone https://github.com/Odeh182003/Ecommerce_Angular
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd Ecommerce_Angular
+    ```
+
+3. **Install the dependencies:**
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+❯ npm install
+```
+
+### Usage
+
+Run the project with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+npm start
+```
+
+### Testing
+
+Ecommerce_angular uses the {__test_framework__} test framework. Run the test suite with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+npm test
+```
+
+---
+
+<div align="left"><a href="#top">⬆ Return</a></div>
+
+---
