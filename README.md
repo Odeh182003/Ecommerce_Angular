@@ -28,6 +28,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Features](#features)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
@@ -37,8 +38,18 @@
 ---
 
 ## Overview
+<p>This project is a full-featured E-commerce web application built with Angular, designed to provide a modern, responsive, and scalable shopping experience. It implements core functionalities such as product listing, category filtering, shopping cart management, and checkout flow, while maintaining clean architecture and reusable components. The goal of the project is to demonstrate best practices in Angular development, including state management, modular design, and integration with backend APIs, making it a solid foundation for learning, extending, or deploying real-world e-commerce solutions.</p>
 
-
+---
+##features
+<li>
+  <ul>Product Catalog – Browse items with category-based filtering and responsive layouts.</ul>
+  <ul>Shopping Cart – Add, remove, and update products with real-time totals.</ul>
+  <ul>Checkout Flow – Streamlined process for placing orders and confirming purchases.</ul>
+  <ul>Responsive Design – Optimized for desktop, tablet, and mobile experiences.</ul>
+  <ul>Reusable Components – Built with Angular best practices for scalability and maintainability.</ul>
+  <ul>API Integration Ready – Easily connect to backend services for dynamic product and order data.</ul>
+</li>
 
 ---
 
