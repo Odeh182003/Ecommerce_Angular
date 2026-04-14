@@ -43,14 +43,13 @@
 ---
 
 ## features
-<li>
-  <ul>Product Catalog – Browse items with category-based filtering and responsive layouts.</ul>
-  <ul>Shopping Cart – Add, remove, and update products with real-time totals.</ul>
-  <ul>Checkout Flow – Streamlined process for placing orders and confirming purchases.</ul>
-  <ul>Responsive Design – Optimized for desktop, tablet, and mobile experiences.</ul>
-  <ul>Reusable Components – Built with Angular best practices for scalability and maintainability.</ul>
-  <ul>API Integration Ready – Easily connect to backend services for dynamic product and order data.</ul>
-</li>
+
+ - Product Catalog – Browse items with category-based filtering and responsive layouts.
+ - Shopping Cart – Add, remove, and update products with real-time totals.
+ - Checkout Flow – Streamlined process for placing orders and confirming purchases.
+ - Responsive Design – Optimized for desktop, tablet, and mobile experiences.
+ - Reusable Components – Built with Angular best practices for scalability and maintainability.
+ - API Integration Ready – Easily connect to backend services for dynamic product and order data.
 
 ---
 
