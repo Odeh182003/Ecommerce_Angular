@@ -1,66 +1,51 @@
-<div id="top">
+# 🛒 E-Commerce Angular Application
 
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
+[![Angular](https://img.shields.io/badge/Angular-17%2B-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-
-# ECOMMERCE_ANGULAR
-
-<em>Transform Shopping Into Seamless Customer Experiences</em>
-
-<!-- BADGES -->
-<img src="https://img.shields.io/github/last-commit/Odeh182003/Ecommerce_Angular?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/Odeh182003/Ecommerce_Angular?style=flat&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/Odeh182003/Ecommerce_Angular?style=flat&color=0080ff" alt="repo-language-count">
-
-<em>Built with the tools and technologies:</em>
-
-<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
-<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
-<img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white" alt="npm">
-<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
-
-</div>
-<br>
+A responsive single-page e-commerce web application built with **Angular** and **TypeScript**. Designed with modern frontend architecture patterns, state management best practices, and modular design principles to deliver a seamless shopping experience.
 
 ---
 
-## Table of Contents
+## 📸 Visual Overview
 
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
+| Product Catalog & Filtering | Interactive Cart & Checkout |
+| :-------------------------: | :-------------------------: |
+| ![Catalog Preview](assets/images/catalog.png) | ![Cart Preview](assets/images/cart.png) |
 
 ---
 
-## Overview
-<p>This project is a full-featured E-commerce web application built with Angular, designed to provide a modern, responsive, and scalable shopping experience. It implements core functionalities such as product listing, category filtering, shopping cart management, and checkout flow, while maintaining clean architecture and reusable components. The goal of the project is to demonstrate best practices in Angular development, including state management, modular design, and integration with backend APIs, making it a solid foundation for learning, extending, or deploying real-world e-commerce solutions.</p>
+## ⚡ Key Features
+
+* **Product Catalog & Dynamic Filtering:** Real-time filtering by category and search queries with client-side/server-side state synchronization.
+* **State-Driven Shopping Cart:** Real-time recalculations for item counts, subtotals, taxes, and shipping logic.
+* **Streamlined Checkout Flow:** Form validation and multi-step user experience optimized for conversion.
+* **Fully Responsive UI:** Built ground-up for mobile, tablet, and desktop viewports using CSS layout standards (Flexbox/Grid).
+* **Modular Architecture:** Core, shared, and feature modules/components structured to ensure maintainability and lazy loading capability.
 
 ---
 
-## features
+## 🛠️ Architecture & Tech Stack
 
- - Product Catalog – Browse items with category-based filtering and responsive layouts.
- - Shopping Cart – Add, remove, and update products with real-time totals.
- - Checkout Flow – Streamlined process for placing orders and confirming purchases.
- - Responsive Design – Optimized for desktop, tablet, and mobile experiences.
- - Reusable Components – Built with Angular best practices for scalability and maintainability.
- - API Integration Ready – Easily connect to backend services for dynamic product and order data.
+* **Frontend Framework:** Angular
+* **Language:** TypeScript
+* **Styling:** Modular CSS / HTML5
+* **Package Manager:** npm
+
+### Architectural Highlights
+* **Component-Driven Design:** Clear separation of smart (container) and dumb (presentational) components to promote reusability and testability.
+* **Reactive State Management:** Leverages RxJS Observables to handle asynchronous data streams and UI state updates efficiently.
+* **REST API Integration:** Service-layer abstraction using Angular's `HttpClient` to isolate data fetching from UI presentation.
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
-
-This project requires the following dependencies:
-
-- **Programming Language:** TypeScript
-- **Package Manager:** Npm
+Make sure you have Node.js and npm installed globally on your machine.
+* [Node.js](https://nodejs.org/) (v18.x or higher)
+* [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
 ### Installation
 
