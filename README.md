@@ -18,8 +18,8 @@ A responsive single-page e-commerce web application built with **Angular** and *
 ## ⚡ Key Features
 
 * **Product Catalog & Dynamic Filtering:** Real-time filtering by category and search queries with client-side/server-side state synchronization.
-* **State-Driven Shopping Cart:** Real-time recalculations for item counts, subtotals, taxes, and shipping logic.
-* **Streamlined Checkout Flow:** Form validation and multi-step user experience optimized for conversion.
+* **Seperation of concerns:** Used Components which are reusable UI building blocks that control specific parts of the interface and Services which handle data managment & business logic seperated from the UI.
+* **Data Binding:** Automatically synchronizes information between the application's model & the user interface.   
 * **Fully Responsive UI:** Built ground-up for mobile, tablet, and desktop viewports using CSS layout standards (Flexbox/Grid).
 * **Modular Architecture:** Core, shared, and feature modules/components structured to ensure maintainability and lazy loading capability.
 
