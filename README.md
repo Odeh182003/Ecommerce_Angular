@@ -2,7 +2,6 @@
 
 [![Angular](https://img.shields.io/badge/Angular-17%2B-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 A responsive single-page e-commerce web application built with **Angular** and **TypeScript**. Designed with modern frontend architecture patterns, state management best practices, and modular design principles to deliver a seamless shopping experience.
 
